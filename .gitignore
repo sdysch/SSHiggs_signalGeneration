@@ -1,0 +1,7 @@
+*.o
+*.pdf
+*.png
+*.pyc
+*.pyo
+*.root
+.asetup.save
