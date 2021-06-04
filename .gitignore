@@ -12,3 +12,5 @@ py.py
 # ignore outputs, but keep directory
 outputs/
 !outputs/.gitkeep
+
+ME5_debug
