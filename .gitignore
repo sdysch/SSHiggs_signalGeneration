@@ -4,4 +4,4 @@
 *.pyc
 *.pyo
 *.root
-.asetup.save
+py.py
