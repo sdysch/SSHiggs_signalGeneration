@@ -1,0 +1,16 @@
+import model MLRSM
+define bsmhiggs h h2 h02 h03 h+ hp2 hl++ hr++ h3 a02 h- hm2 hl-- hr--
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
+generate p p > mu+ mu+ j j / bsmhiggs w+ w- @1
+add process p p > mu- mu- j j / bsmhiggs w+ w- @2
+output outputs/pp_mumujj_MWR_0.5TeV_MN_0.6TeV_WRWR_W1H1J1
+launch
+shower=pythia8
+set MW2 = 500.0
+set MN4 = 600.0
+set MN5 = 600.0
+set MN6 = 600.0
+set WW2 = auto
+set WN4 = auto
+set WN5 = auto
+set WN6 = auto

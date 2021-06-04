@@ -1,7 +1,14 @@
 *.o
-*.pdf
-*.png
 *.pyc
 *.pyo
-*.root
+
 py.py
+
+*.pdf
+*.png
+
+*.root
+
+# ignore outputs, but keep directory
+outputs/
+!outputs/.gitkeep
