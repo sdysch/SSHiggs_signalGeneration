@@ -1,0 +1,9 @@
+import model MLRSM
+define l+ e+ mu+
+define l- e- mu-
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
+generate p p > hl++ j j, hl++ > l+ l+ @1
+add process p p > hl-- j j, hl-- > l- l- @2
+output outputs/VBF_ZGamma_ll_eemumu_MH++_default
+launch
+shower=pythia8
