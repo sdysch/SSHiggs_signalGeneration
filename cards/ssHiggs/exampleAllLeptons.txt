@@ -1,9 +1,0 @@
-import model MLRSM
-define smhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
-define l+ e+ mu+ ta+
-define l- e- mu- ta-
-define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ hl--, hl++ > l+ l+, hl-- > l- l- / smhiggs
-output outputs/pp_HH_ll_eemumutautau_MH++_default
-launch
-shower=pythia8
