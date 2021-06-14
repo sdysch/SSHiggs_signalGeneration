@@ -4,6 +4,6 @@ define l+ e+ mu+
 define l- e- mu-
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
 generate p p > hl++ hl--, hl++ > l+ l+, hl-- > l- l- / smhiggs
-output outputs/pp_HH_ll_eemumu_MH++_default
+output outputs/pp_HH_schan_ll_eemumu_MH++_default
 launch
 shower=pythia8
