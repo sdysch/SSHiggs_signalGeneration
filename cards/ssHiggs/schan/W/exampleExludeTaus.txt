@@ -1,0 +1,10 @@
+import model MLRSM
+define smhiggs h h2 h02 h03 hp2 h3 a02 hm2
+define l+ e+ mu+
+define l- e- mu-
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
+generate p p > hl++ h- / smhiggs, hl++ > l+ l+ @1
+add process p p > hl-- h+ / smhiggs, hl-- > l- l- @2
+output outputs/schan_W_ll_eemumu_MH++_default
+launch
+shower=pythia8
