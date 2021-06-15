@@ -35,4 +35,6 @@ mg5_aMC
 
 # Run
 For example, to run schan, ZGamma, 100GeV,
-`cat cards/ssHiggs/schan/ZGamma/MHPPL_{base,100GEV}.txt | /path/to/bin/mg5_aMC`
+```cat cards/ssHiggs/schan/ZGamma/MHPPL_{base,100GEV}.txt > /tmp/runCard.txt
+/path/to/bin/mg5_aMC /tmp/runCard.txt
+```
