@@ -5,6 +5,18 @@
 ```
 cp -r /path/to/MLRSM /path/to/MadGraph/MG5_aMC_v3_1_1/models/
 ```
+- Add ability to set MHPPL externally:
+	- Modify `MLRSM/parameters.py`
+	```
+MHPPL = Parameter(name = 'MHPPL',
+                  nature = 'external',
+                  type = 'real',
+                  #value = 'cmath.sqrt((-2*rho1 + rho3)*vR**2 + alpha3*vev**2*cmath.sqrt(1 - eps**2))/cmath.sqrt(2)',
+                  value = 500, # default??
+                  lhacode = [ 61 ],
+                  lhablock = 'MASS',
+                  texname = 'M_{\\text{HPPL}}')
+	```
 
 - It should be possible to add the model to `PYTHONPATH` (see [setup.sh](setup.sh)), but I could not get this to work yet
 - `mg5_aMC install.cfg`
