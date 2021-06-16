@@ -1,0 +1,4 @@
+output outputs/schan_ZGamma_ll_eemumu_MHPPL_800GEV
+launch
+shower=pythia8
+set MHPPL = 800
