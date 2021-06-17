@@ -1,0 +1,10 @@
+import model MLRSM
+define bsmhiggs h h2 h02 h03 h3 a02 hp2 hm2
+define l+ e+ mu+
+define l- e- mu-
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
+#define vl = ve vm
+#define vl~ = ve~ vm~
+# FIXME no particle ve~ in model?
+generate p p > hl++ h- / bsmhiggs, hl++ > l+ l+ @1
+add process p p > hl-- h+ / bsmhiggs, hl-- > l- l- @2
