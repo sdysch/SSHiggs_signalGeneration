@@ -1,12 +1,11 @@
-#import model MLRSM
-#define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
-#define l+ e+ mu+
-#define l- e- mu-
+import model MLRSM
+define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
 #define j = g u c d s b t u~ c~ d~ s~ b~ t~
-#!neutrino issue here
-#generate p p > hl++ j j / bsmhiggs w2+ w2-, hl++ > w+ w+, w+ > l+, w+ > l+ @1
-#add process p p > hl-- j j / bsmhiggs w2+ w2-, hl-- > w- w- @2
-#output outputs/tchan_ll_eemumu_MHPPL_100GEV
-#launch
-#shower=pythia8
-#set MHPPL = 100
+Example of correct syntax: p p > t t~, ( t > w+ b, w+ > l+ vl)
+generate p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > e+ ve) @1
+add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > mu+ vm) @2
+add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm) @3
+output outputs/tchan_WW_eemumu_MHPPL_100GEV
+launch
+shower=pythia8
+set MHPPL = 100
