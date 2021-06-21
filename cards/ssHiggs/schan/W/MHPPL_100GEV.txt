@@ -1,4 +1,4 @@
-output /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu_MHPPL_100GEV
+output outputs/schan_W_ll_eemumu_MHPPL_100GEV
 launch
 shower=pythia8
 set MHPPL = 100
