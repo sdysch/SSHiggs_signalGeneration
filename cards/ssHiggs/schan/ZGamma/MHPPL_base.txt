@@ -1,6 +1,9 @@
 import model MLRSM
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
-define l+ e+ mu+
-define l- e- mu-
+#define l+ e+ mu+
+#define l- e- mu-
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ hl-- / bsmhiggs, hl++ > l+ l+, hl-- > l- l-
+generate p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > e- e- @1
+add process p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > mu- mu- @2
+add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > mu- mu- @2
+add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > e- e- @2
