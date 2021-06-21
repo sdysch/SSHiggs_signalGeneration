@@ -1,0 +1,4 @@
+output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll_eemumu_MHPPL_300GEV
+launch
+shower=pythia8
+set MHPPL = 300
