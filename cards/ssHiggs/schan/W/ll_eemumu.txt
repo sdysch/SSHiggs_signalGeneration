@@ -10,13 +10,12 @@ add process p p > hl++ h- / bsmhiggs, hl++ > mu+ mu+, h- > e- ve @6
 add process p p > hl-- h+ / bsmhiggs, hl-- > e- e-, h+ > e+ ve @7
 add process p p > hl-- h+ / bsmhiggs, hl-- > mu- mu-, h+ > e+ ve @8
 
-output outputs/schan_W_ll_eemumu
-launch outputs/schan_W_ll_eemumu
+output /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu
+launch /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu
 
-launch
 shower = pythia8
 set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPL = auto
 
-launch outputs/schan_W_ll_eemumu -i
-print_results --path=outputs/schan_W_ll_eemumu/cross_section.txt --format=short
+launch /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu -i
+print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu/cross_section.txt --format=short

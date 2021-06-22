@@ -9,7 +9,6 @@ add process p p > hl-- j j / bsmhiggs w2+ w2-, hl-- > mu- mu- @4
 output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 
-launch
 shower = pythia8
 set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPL = auto
