@@ -1,11 +1,17 @@
 import model MLRSM
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
-#define j = g u c d s b t u~ c~ d~ s~ b~ t~
-Example of correct syntax: p p > t t~, ( t > w+ b, w+ > l+ vl)
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
 generate p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > e+ ve) @1
 add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > mu+ vm) @2
 add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm) @3
-output outputs/tchan_WW_eemumu_MHPPL_100GEV
+
+output outputs/VBF_WW_eemumu
+launch outputs/VBF_WW_eemumu
+
 launch
-shower=pythia8
-set MHPPL = 100
+shower = pythia8
+set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
+set WHPPL = auto
+
+launch outputs/VBF_WW_eemumu -i
+print_results --path=outputs/VBF_WW_eemumu/cross_section.txt --format=short
