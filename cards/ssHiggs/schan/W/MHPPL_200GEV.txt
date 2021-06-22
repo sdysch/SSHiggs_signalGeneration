@@ -1,4 +1,0 @@
-output outputs/schan_W_ll_eemumu_MHPPL_200GEV
-launch
-shower=pythia8
-set MHPPL = 200

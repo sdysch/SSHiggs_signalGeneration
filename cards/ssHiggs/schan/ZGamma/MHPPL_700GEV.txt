@@ -1,4 +1,0 @@
-output outputs/schan_ZGamma_ll_eemumu_MHPPL_700GEV
-launch
-shower=pythia8
-set MHPPL = 700
