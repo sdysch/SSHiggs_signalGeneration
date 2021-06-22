@@ -5,13 +5,13 @@ generate p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > e+ v
 add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > mu+ vm) @2
 add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm) @3
 
-output outputs/VBF_WW
-launch outputs/VBF_WW
+output /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW
 
 launch
 shower = pythia8
 set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPL = auto
 
-launch outputs/VBF_WW -i
-print_results --path=outputs/VBF_WW/cross_section.txt --format=short
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW -i
+print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/VBF_WW/cross_section.txt --format=short
