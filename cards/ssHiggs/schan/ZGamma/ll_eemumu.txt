@@ -8,12 +8,12 @@ add process p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > mu- mu- @2
 add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > mu- mu- @2
 add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > e- e- @2
 
-output /eos/user/s/sdysch/SSHiggs/outputs/outputs/schan_ZGamma_ll_eemumu
-launch /eos/user/s/sdysch/SSHiggs/outputs/outputs/schan_ZGamma_ll_eemumu
+output /eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu
+launch /eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu
 
 shower = pythia8
 set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPL = auto
 
-launch /eos/user/s/sdysch/SSHiggs/outputs/outputs/schan_ZGamma_ll_eemumu -i
-print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/outputs/schan_ZGamma_ll_eemumu/cross_section.txt --format=short
+launch /eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu -i
+print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu/cross_section.txt --format=short
