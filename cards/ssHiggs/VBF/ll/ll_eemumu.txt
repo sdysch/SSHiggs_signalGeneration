@@ -13,5 +13,5 @@ shower = pythia8
 set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPR = auto
 
-launch outputs/VBF_ll -i
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll -i
 print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/VBF_ll/cross_section.txt --format=short
