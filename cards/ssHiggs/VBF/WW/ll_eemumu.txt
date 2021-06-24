@@ -9,8 +9,8 @@ output /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW
 
 shower = pythia8
-set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
-set WHPPL = auto
+set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
+set WHPPR = auto
 
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW -i
 print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/VBF_WW/cross_section.txt --format=short
