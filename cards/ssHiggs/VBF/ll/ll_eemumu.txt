@@ -7,7 +7,7 @@ add process p p > hr-- j j / bsmhiggs hl++ hl--, hr-- > e- e- @3
 add process p p > hr-- j j / bsmhiggs hl++ hl--, hr-- > mu- mu- @4
 
 output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
-launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll --cluster
 
 shower = pythia8
 set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
