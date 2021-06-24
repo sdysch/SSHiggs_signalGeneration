@@ -16,6 +16,15 @@ MHPPL = Parameter(name = 'MHPPL',
                   lhacode = [ 61 ],
                   lhablock = 'MASS',
                   texname = 'M_{\\text{HPPL}}')
+
+MHPPR = Parameter(name = 'MHPPR',
+                  nature = 'external',
+                  type = 'real',
+                  #value = 'cmath.sqrt(2*rho2*vR**2 + (alpha3*vev**2*cmath.sqrt(1 - eps**2))/2.)',
+                  value = 500, # default??
+                  lhacode = [ 62 ],
+                  lhablock = 'MASS',
+                  texname = 'M_{\\text{HPPR}}')
 	```
 
 - It should be possible to add the model to `PYTHONPATH` (see [setup.sh](setup.sh)), but I could not get this to work yet

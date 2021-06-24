@@ -1,17 +1,17 @@
 import model MLRSM
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ j j / bsmhiggs w2+ w2-, hl++ > e+ e+ @1
-add process p p > hl++ j j / bsmhiggs w2+ w2-, hl++ > mu+ mu+ @2
-add process p p > hl-- j j / bsmhiggs w2+ w2-, hl-- > e- e- @3
-add process p p > hl-- j j / bsmhiggs w2+ w2-, hl-- > mu- mu- @4
+generate p p > hr++ j j / bsmhiggs hl++ hl--, hr++ > e+ e+ @1
+add process p p > hr++ j j / bsmhiggs hl++ hl--, hr++ > mu+ mu+ @2
+add process p p > hr-- j j / bsmhiggs hl++ hl--, hr-- > e- e- @3
+add process p p > hr-- j j / bsmhiggs hl++ hl--, hr-- > mu- mu- @4
 
 output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 
 shower = pythia8
-set MHPPL scan:[100, 200, 300, 400, 500, 600, 700, 800]
-set WHPPL = auto
+set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
+set WHPPR = auto
 
 launch outputs/VBF_ll -i
 print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/VBF_ll/cross_section.txt --format=short
