@@ -1,13 +1,13 @@
 import model MLRSM
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > e+ ve) @1
-add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > mu+ vm) @2
-add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm) @3
+generate p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > e+ ve)
+add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > mu+ vm)
+add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm)
 
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > e- ve) @4
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > mu- vm) @5
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > mu- vm, w- > mu- vm) @6
+add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > e- ve)
+add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > mu- vm)
+add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > mu- vm, w- > mu- vm)
 
 output outputs/VBF_WW_hr
 launch outputs/VBF_WW_hr

@@ -1,12 +1,12 @@
-import model MLRSM
+import model MLRSM_MHPPL_external
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2 hr++
 #define l+ e+ mu+
 #define l- e- mu-
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > e- e- @1
-add process p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > mu- mu- @2
-add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > mu- mu- @2
-add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > e- e- @2
+generate p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > e- e-
+add process p p > hl++ hl-- / bsmhiggs, hl++ > e+ e+, hl-- > mu- mu-
+add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > mu- mu-
+add process p p > hl++ hl-- / bsmhiggs, hl++ > mu+ mu+, hl-- > e- e-
 
 output /eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu
 launch /eos/user/s/sdysch/SSHiggs/outputs/schan_ZGamma_ll_eemumu

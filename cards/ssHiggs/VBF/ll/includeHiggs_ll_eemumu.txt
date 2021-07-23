@@ -1,0 +1,17 @@
+import model MLRSM
+define j = g u c d s b t u~ c~ d~ s~ b~ t~
+
+generate p p > hr++ j j, hr++ > e+ e+
+#add process p p > hr++ j j, hr++ > mu+ mu+
+#add process p p > hr-- j j, hr-- > e- e-
+#add process p p > hr-- j j, hr-- > mu- mu-
+
+output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll_includeHiggs
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll_includeHiggs
+
+shower = pythia8
+#set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
+set MHPPR scan:[100, 500, 1000]
+set WHPPR = auto
+
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll_includeHiggs -i

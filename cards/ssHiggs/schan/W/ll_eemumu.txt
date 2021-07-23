@@ -1,14 +1,14 @@
-import model MLRSM
+import model MLRSM_MHPPL_external
 define bsmhiggs h h2 h02 h03 h3 a02 hp2 hm2 hr++
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ h- / bsmhiggs, hl++ > e+ e+, h- > mu- vm @1
-add process p p > hl++ h- / bsmhiggs, hl++ > mu+ mu+, h- > mu- vm @2
-add process p p > hl-- h+ / bsmhiggs, hl-- > e- e-, h+ > mu+ vm @3
-add process p p > hl-- h+ / bsmhiggs, hl-- > mu- mu-, h+ > mu+ vm @4
-add process p p > hl++ h- / bsmhiggs, hl++ > e+ e+, h- > e- ve @5
-add process p p > hl++ h- / bsmhiggs, hl++ > mu+ mu+, h- > e- ve @6
-add process p p > hl-- h+ / bsmhiggs, hl-- > e- e-, h+ > e+ ve @7
-add process p p > hl-- h+ / bsmhiggs, hl-- > mu- mu-, h+ > e+ ve @8
+generate p p > hl++ h- / bsmhiggs, hl++ > e+ e+, h- > mu- vm
+add process p p > hl++ h- / bsmhiggs, hl++ > mu+ mu+, h- > mu- vm
+add process p p > hl-- h+ / bsmhiggs, hl-- > e- e-, h+ > mu+ vm
+add process p p > hl-- h+ / bsmhiggs, hl-- > mu- mu-, h+ > mu+ vm
+add process p p > hl++ h- / bsmhiggs, hl++ > e+ e+, h- > e- ve
+add process p p > hl++ h- / bsmhiggs, hl++ > mu+ mu+, h- > e- ve
+add process p p > hl-- h+ / bsmhiggs, hl-- > e- e-, h+ > e+ ve
+add process p p > hl-- h+ / bsmhiggs, hl-- > mu- mu-, h+ > e+ ve
 
 output /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu
 launch /eos/user/s/sdysch/SSHiggs/outputs/schan_W_ll_eemumu
