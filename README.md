@@ -31,6 +31,7 @@ MHPPR = Parameter(name = 'MHPPR',
 - `mg5_aMC install.cfg`
 
 # Troubleshooting
+## Installing pythia8
 - Installing pythia8 via
 ```
 mg5_aMC
@@ -41,6 +42,17 @@ didn't work - webpage for pythia8 version was not found. Instead, a tarball of [
 mg5_aMC
 > install pythia8 --pythia8_tarball=/path/to/pythia8245.tgz
 ```
+
+## Installing lhapdf6
+- This seems to work via
+```
+mg5_aMC
+> install lhapdf6
+```
+however, the path to the binary was not present? 
+- I had to manually install with instructions from [here](https://lhapdf.hepforge.org/install.html)
+	- Be sure to set `lhapdf_py3 = path/to/bin/lhapdf-config` in `input/mg5_configuration.txt`
+- However, a local install worked from within madgraph
 
 # Run
 For example, to run schan, ZGamma, 100GeV,

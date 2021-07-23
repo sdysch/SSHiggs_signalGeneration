@@ -6,6 +6,8 @@
 
 if echo $HOSTNAME | grep lxplus > /dev/null; then
 	alias runMG="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_v3_1_1/bin/mg5_aMC"
+	export LD_LIBRARY_PATH="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_v3_1_1/HEPTools/lib":$LD_LIBRARY_PATH
+	export PYTHONPATH="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_v3_1_1/HEPTools/lib":$PYTHONPATH
 	setupATLAS
 	lsetup "python 3.7"
 	lsetup git
