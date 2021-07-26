@@ -1,8 +1,0 @@
-executable			= runVBF_WW.sh
-arguments			= $(ClusterID) $(ProcId)
-output				= logs/log.$(ClusterId).$(ProcId).log
-error				= logs/log.$(ClusterId).$(ProcId).err
-log					= logs/log.$(ClusterId).$(ProcId).log
-+jobFlavour			= "testmatch"
-notify_user			= samuel.dysch@cern.ch
-queue
