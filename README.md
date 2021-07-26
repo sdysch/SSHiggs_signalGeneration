@@ -54,10 +54,16 @@ however, the path to the binary was not present?
 	- Be sure to set `lhapdf_py3 = path/to/bin/lhapdf-config` in `input/mg5_configuration.txt`
 - However, a local install worked from within madgraph
 
-# Run
-For example, to run schan, ZGamma, 100GeV,
-```cat cards/ssHiggs/schan/ZGamma/MHPPL_{base,100GEV}.txt > /tmp/runCard.txt
-/path/to/bin/mg5_aMC /tmp/runCard.txt
+# Running
+## Locally
+```
+/path/to/bin/mg5_aMC myCard.txt
+```
+
+## Submitting jobs to condir
+For example:
+```
+condor_submit jobDef_VBF.txt -queue card in "cards/ssHiggs/VBF/ll/ll_eemumu.txt", "cards/ssHiggs/VBF/WW/ll_eemumu.txt"
 ```
 
 # Copy to lxplus with rsync
