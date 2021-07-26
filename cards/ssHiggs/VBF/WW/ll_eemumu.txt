@@ -1,9 +1,12 @@
 import model MLRSM_MHPPR_external
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > e+ ve)
-add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > e+ ve, w+ > mu+ vm)
-add process p p > hl++ j j / bsmhiggs w2+ w2-, (hl++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm)
+generate p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > e+ ve)
+add process p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > mu+ vm)
+add process p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > e- ve)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > mu- vm)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > mu- vm, w- > mu- vm)
 
 output /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW

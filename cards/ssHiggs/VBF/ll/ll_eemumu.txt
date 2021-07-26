@@ -10,7 +10,8 @@ output /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll
 
 shower = pythia8
-set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
+#set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
+set MHPPR scan:[100, 200, 300, 400, 500, 600]
 set WHPPR = auto
 
 launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_ll -i
