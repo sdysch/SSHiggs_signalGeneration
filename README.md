@@ -68,3 +68,4 @@ condor_submit jobDef_VBF.txt -queue card in "cards/ssHiggs/VBF/ll/ll_eemumu.txt"
 
 # Copy to lxplus with rsync
 `rsync -aP MG_* lxplus:/eos/user/s/sdysch/SSHiggs/outputs`
+
