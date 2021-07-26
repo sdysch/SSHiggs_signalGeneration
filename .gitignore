@@ -19,3 +19,5 @@ MG5_debug
 *.tar
 
 temp/*.txt
+
+condor/**/sdysch.cc
