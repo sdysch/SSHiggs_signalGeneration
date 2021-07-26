@@ -9,8 +9,5 @@ alias runMG="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_
 export LD_LIBRARY_PATH="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_v3_1_1/HEPTools/lib":$LD_LIBRARY_PATH
 export PYTHONPATH="/afs/cern.ch/work/s/sdysch/private/SSHiggs/MadGraphInstall/MG5_aMC_v3_1_1/HEPTools/lib":$PYTHONPATH
 
-CARD=$1
-
 cd /afs/cern.ch/work/s/sdysch/private/SSHiggs/SSHiggs_signalGeneration/
-#runMG cards/ssHiggs/VBF/ll/ll_eemumu.txt
-runMG $CARD
+runMG cards/ssHiggs/VBF/WW/ll_eemumu.txt

@@ -1,10 +1,8 @@
-executable			= runVBF.sh
+executable			= runVBF_ll.sh
 arguments			= $(ClusterID) $(ProcId)
 output				= logs/log.$(ClusterId).$(ProcId).log
 error				= logs/log.$(ClusterId).$(ProcId).err
 log					= logs/log.$(ClusterId).$(ProcId).log
 +jobFlavour			= "testmatch"
 notify_user			= samuel.dysch@cern.ch
-notification        = Error
-
-arguments           = "$(card) $(ClusterId) $(ProcId)"
+queue
