@@ -21,3 +21,4 @@ MG5_debug
 temp/*.txt
 
 condor/**/sdysch.cc
+condor/**/logs/
