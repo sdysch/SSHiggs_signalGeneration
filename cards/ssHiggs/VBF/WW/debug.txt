@@ -1,21 +1,20 @@
-import model MLRSM
+import model MLRSM_MHPPR_external
 define bsmhiggs h h2 h02 h03 h+ hp2 h3 a02 h- hm2
 define j = g u c d s b t u~ c~ d~ s~ b~ t~
-generate p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > e+ ve)
-add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > mu+ vm)
-add process p p > hr++ j j / bsmhiggs hl++ hl--, (hr++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm)
+generate p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > e+ ve)
+add process p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > e+ ve, w+ > mu+ vm)
+add process p p > hr++ j j / bsmhiggs w2+ w2- hl++ hl--, (hr++ > w+ w+, w+ > mu+ vm, w+ > mu+ vm)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > e- ve)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > mu- vm)
+add process p p > hr-- j j / bsmhiggs w2+ w2- hl++ hl--, (hr-- > w- w-, w- > mu- vm, w- > mu- vm)
 
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > e- ve)
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > e- ve, w- > mu- vm)
-add process p p > hr-- j j / bsmhiggs hl++ hl--, (hr-- > w- w-, w- > mu- vm, w- > mu- vm)
-
-output outputs/VBF_WW_hr
-launch outputs/VBF_WW_hr
+output /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW_debug
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW_debug
 
 shower = pythia8
 set MHPPR scan:[100, 200, 300, 400, 500, 600, 700, 800]
 set WHPPR = auto
 set nevents 10
 
-launch outputs/VBF_ll_hr -i
-print_results --path=outputs/VBF_ll_hr/cross_section.txt --format=short
+launch /eos/user/s/sdysch/SSHiggs/outputs/VBF_WW_debug -i
+print_results --path=/eos/user/s/sdysch/SSHiggs/outputs/VBF_WW/cross_section.txt --format=short

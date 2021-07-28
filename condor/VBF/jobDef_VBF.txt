@@ -1,6 +1,6 @@
 executable			= runVBF.sh
 arguments			= $(ClusterID) $(ProcId)
-output				= logs/log.$(ClusterId).$(ProcId).log
+output				= logs/log.$(ClusterId).$(ProcId).out
 error				= logs/log.$(ClusterId).$(ProcId).err
 log					= logs/log.$(ClusterId).$(ProcId).log
 +jobFlavour			= "testmatch"
